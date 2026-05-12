@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auto Start + </title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <header>
+    <h1>Auto Start + </h1>
+    <p>Auto Start + </p>
+  </header>
+
+  <main>
+
+    <section class="form-box">
+      <h2>Добавить запчасть</h2>
+
+      <div class="inputs">
+
+        <input type="text" id="partName" placeholder="Название запчасти">
+
+        <input type="text" id="carBrand" placeholder="Марка машины">
+
+        <input type="number" id="partPrice" placeholder="Цена">
+
+        <input type="number" id="partQty" placeholder="Количество">
+
+        <button id="addBtn">Добавить</button>
+
+      </div>
+    </section>
+
+    <section class="search-box">
+      <input type="text" id="searchInput" placeholder="🔍 Поиск по запчастям и маркам...">
+    </section>
+
+    <section class="stats">
+      <div class="card">
+        <h3>Общая сумма</h3>
+        <p id="totalPrice">0 сом</p>
+      </div>
+
+      <div class="card">
+        <h3>Всего товаров</h3>
+        <p id="totalItems">0</p>
+      </div>
+    </section>
+
+    <section class="products">
+
+      <div class="products-header">
+        <span>Запчасть</span>
+        <span>Марка</span>
+        <span>Цена</span>
+        <span>Количество</span>
+        <span>Удалить</span>
+      </div>
+
+      <div id="productsList"></div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
